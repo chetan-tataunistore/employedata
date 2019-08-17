@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Form from './component/Form';
+import Search from './component/Search';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export class App extends React.Component {
+
+    render () {
+        return (
+            <Router>
+                <div className="Router">
+                    <ul>
+                        <li>Sunday Mobility</li>
+                        <li>
+                            <Link to="/">Store</Link>
+                        </li>
+                        <li>
+                            <Link to="/search">Search</Link>
+                        </li>
+
+                    </ul>
+
+                    <hr />
+                    <Route exact path="/" component={Form} />
+                    <Route path="/Search" component={Search} />
+
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;

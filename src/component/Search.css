@@ -1,0 +1,115 @@
+.filterInput {
+  padding: 15px 17px;
+  border: none;
+}
+
+.filterIcon {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.filterButon {
+  display: flex;
+  border: none;
+  margin: 6px;
+}
+.searchFormHolder {
+  width: 50%;
+  background: #535a7d;
+  margin: 0 auto;
+  padding: 40px 0px 40px 0px;
+}
+.button {
+  padding: 2px 32px 5px 12px;
+  background: #fff;
+  max-width: 28px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.filter {
+  margin: 5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #e8e8e8;
+  width: 12%;
+  padding: 4px;
+  margin: 9px -29px;
+  text-align: center;
+}
+.filter:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content p:hover {
+  background-color: #ddd;
+  border: 1px;
+  padding: 7px 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  box-shadow: 1px 1px 2px #7b7474;
+}
+.searchInputHolder {
+  transform: translate(20%, 0);
+}
+.searchBlock {
+  display: flex;
+}
+.searchSubmit {
+  background: #eaeaea;
+  padding: 11px 7px;
+  text-align: center;
+  border: none;
+  border-radius: 7px;
+  color: #000;
+  font-family: bold;
+  font-size: 16px;
+  margin: 2px 8px;
+}
+.errorMsg {
+  width: 226px;
+  margin: 41%;
+  color: #f00;
+  font-family: cursive;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00000080;
+  color: white;
+}
+.resultContainer {
+  width: 50%;
+  margin: auto;
+}
